@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #3B3B3B;
+}
+
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+.menu li {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.menu li:hover{
+    border-bottom: 2px solid #165C91;
+}
+
+main h1 {
+    font-size: 4em;
+    color: #165C91;
+    line-height: 0.9em;
+    margin-bottom: 20px;
+}
+
+span{
+    color: #1D8ADA;
+}
+
+main p {
+    font-size: 1.5em;
+    color: #0037ec;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    color: #3B3B3B;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-justify: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.descricao-dojo-bg {
+    background-color: #1D8ADA;
+}
+
+.descricao-dojo {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.descricao-dojo h2 {
+    font-size: 2.5em;
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.descricao-dojo p {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 10px 10px rgb(0, 52, 112);
+    color: rgb(3, 3, 3);
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1050px) {
+    main img {
+        max-width: 350px;
+        max-height: auto;
+    }
+
+    main h1 {
+        font-size: 3em;
+    }
+
+}
+
+@media (max-width: 850px) {
+    header{
+        flex-direction: column;
+    }
+    header img {
+        margin-bottom: 20px;
+    }
+
+    header .menu {
+        justify-content: center;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+}
+
+
