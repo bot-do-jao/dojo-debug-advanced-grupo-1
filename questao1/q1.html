@@ -23,6 +23,25 @@
         </nav>
     </header>
 
-    <h1>1</h1>
+    <section class="descricao">
+      <p style="text-align: justify;">No setor de comunicação da VPT para o disparo de emails é utilizado um bot para automatizar o disparo em horários e dias especifícos, a tecnologia anterior está sendo atualizada mas dificuldades foram encontradas na implementação da lógica para definir data e hora de forma precisa.<br>
+      Ajude nossos desenvolvedores a encontrar o por que da nova tecnologia implementada não funcionar como o esperado. Lembrando que a data esperada pelo bot deve estar no formato de Dia/Mês/Ano e a hora no formato de Hora:Minuto:Segundo.<br>
+      Obs: Em vista da quantidade de emails tanto a data como a hora devem ser atualizado a cada segundo
+      </p>
+      <img src="../imagens/clock.png" width="200px" height="200px">
+    </section>
+
+    <div class="clock">
+      <div>Horário Atual:</div>
+      <div class="time" id="time">00:00:00</div>
+    </div>
+
+    <div class="date">
+      <div>Data Atual:</div>
+      <div class="real-date" id="real-date">00/00/00</div>
+    </div>
+
+    <script src="../script.js"></script>
+
 </body>
 </html>
